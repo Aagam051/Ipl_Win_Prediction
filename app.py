@@ -44,13 +44,13 @@ with col5:
 if st.button('Predict Probability'):
    if score>=target:
         st.error("Score should be less than Target")
-    elif overs>=20 and overs>0:
+   elif overs>=20 and overs>0:
         st.error("Overs should be Greater than 0 and Less than or equal to 19")
-    elif wickets>=10:
+   elif wickets>=10:
         st.error("Wickets should be less than 10")
-    elif batting_team == bowling_team:
+   elif batting_team == bowling_team:
         st.error("Bowling and batting team can't be same!")
-    else:
+   else:
         runs_left = target - score
         balls_left = 120 - (overs*6)
         wickets = 10 - wickets
