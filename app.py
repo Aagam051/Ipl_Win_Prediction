@@ -44,7 +44,7 @@ with col5:
 if st.button('Predict Probability'):
    if score>=target:
         st.error("Score should be less than Target")
-   elif overs>=20 and overs>0:
+   elif overs>=20 and overs<0:
         st.error("Overs should be Greater than 0 and Less than or equal to 19")
    elif wickets>=10:
         st.error("Wickets should be less than 10")
