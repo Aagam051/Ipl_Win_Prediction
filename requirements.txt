@@ -2,6 +2,6 @@ streamlit
 pandas
 numpy
 scikit-learn
-matplotlib.pyplot
+matplotlib
 seaborn
 streamlit_option_menu
